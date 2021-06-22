@@ -5,6 +5,7 @@ fun main(){
 fun runSimulation(){
     val greetingFunction = configureetingFunction()
     println(greetingFunction("翁子皓"))
+    println(greetingFunction("翁子皓"))
 }
 fun configureetingFunction():((String)->String ) {
     val structureType = "醫院"

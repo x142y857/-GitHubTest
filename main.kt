@@ -1,7 +1,7 @@
 fun main(){
-    runSimulation("翁子皓"){playerName,numBuildings->
+    runSimulation("翁子皓", ::printConstructionCost){playerName,numBuildings->
         val currentYear = 2018
-        println("Adding $numBuildings houses")
+        println("添加 $numBuildings 房子")
         "歡迎來到 SimVillage, $playerName! (copyright $currentYear)"
     }
 }
@@ -13,5 +13,5 @@ inline fun runSimulation(playerName: String,cosPrinter: (Int)->Unit,greetingFunc
 
 fun printConstructionCost(numBuildings: Int){
     val cost = 500
-    println("Construction Cost: ${cost * numBuildings}")
+    println("建築成本: ${cost * numBuildings}")
 }
